@@ -2,10 +2,10 @@ name: x86-64 Pull and Save Docker Image
 on:
   workflow_dispatch:
     inputs:
-      docker_images: 'zauberzeug/nicegui,mariadb'
+      docker_images: 'zauberzeug/nicegui,mariadb:latest'
         description: '请填写docker镜像名称 多个用英文逗号分开'
         required: true
-        default: 'zauberzeug/nicegui,mariadb'  # 设置默认的 Docker 镜像列表
+        default: 'zauberzeug/nicegui,mariadb:latest'  # 设置默认的 Docker 镜像列表
 
 jobs:
   pull_and_package:
