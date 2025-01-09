@@ -3,7 +3,7 @@ name: Get-AMD64-Docker-Images-Release
 on:
   workflow_dispatch:
     inputs:
-      docker_images: 'zauberzeug/nicegui:latest,mariadb:latest,adminer:latest'
+      docker_images:
         description: '请填写docker镜像名称,多个用英文逗号分开'
         required: true
         default: 'zauberzeug/nicegui:latest,mariadb:latest'
