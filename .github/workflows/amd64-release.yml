@@ -6,7 +6,7 @@ on:
       docker_images:
         description: '请填写docker镜像名称,多个用英文逗号分开'
         required: true
-        default: 'zauberzeug/nicegui:latest,mariadb:latest'
+        default: 'zauberzeug/nicegui:latest,mariadb:latest,ahmadnassri/vscode-server:latest'
 
 jobs:
   pull_and_package:
